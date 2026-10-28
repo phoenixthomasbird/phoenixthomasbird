@@ -1,6 +1,6 @@
 # Phoenix T. Bird
 
-I believe AI is a tool and not a crutch. As someone with a documented disability, I have used AI to make up the difference in how my brain thinks and how the world around me functions. I am currently working on a few different applications designed to help others bridge the gap between what they can do and what the world expects of them using the tools and support that AI offers.
+I believe AI should be used as a tool and not a crutch. As someone with a documented disability, I have used AI to make up the difference in how my brain thinks and how the world around me functions. I am currently working on a few different applications designed to help others bridge the gap between what they can do and what the world expects of them using the tools and support that AI offers.
 
 ## What I'm working on
 
