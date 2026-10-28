@@ -4,11 +4,12 @@ I believe AI is a tool and not a crutch. As someone with a documented disability
 
 ## What I'm working on
 
-**Bōcere** (TypeScript, Electron; source private, [protoype installers public](https://github.com/justhurkledurkling-max/bocere-releases))
-A desktop app for writers. The design question: how do you bridge the gap between human and AI without AI generating content? Bōcere is designed to make writing easy, editing manageable and prepress a click of a button. The app uses markdown files so that AI can also interact with them, but the app controls how the AI injects its results onto the page. 
-- The model can only *propose* edits through a tool call. They appear as tracked changes; the author accepts or rejects each one, and every decision is recorded and fed back to the model.
-- Only the main process talks to the model; the page has no network access, and the API key sits in the OS keychain, never in the book or the page.
-- Before anything is sent, the app shows exactly which text the model will read.
+**Bōcere** (TypeScript, Electron; source private, [prototype installers public](https://github.com/justhurkledurkling-max/bocere-releases))
+A desktop app for writers. The design question: how do you bridge the gap between human and AI without AI generating content? Bōcere is designed to make writing easy, editing manageable and prepress a click of a button. It has no AI chat of its own. Books are plain Markdown files, so the author's own AI tools can read them, but the app controls how any outside change reaches the page.
+- Every outside change, from an editor or from the author's own AI, arrives as a tracked change. The author accepts or rejects each one, and nothing touches the text until they do.
+- Bōcere writes a guide into each book folder (`AGENTS.md` and `CLAUDE.md`) telling AI tools to suggest rather than rewrite, and how to send suggestions so they open in the app as tracked changes.
+- Author and editor pass versions back and forth. Only what changed is marked, and a renamed or renumbered chapter is matched by its words, not its file name.
+- The page has no network access, and only the main process reads or writes the author's files.
 - The accounts server's row-level security is tested by running the real SQL in an in-memory Postgres and having an author, an editor, a stranger and a publisher each try what they should and shouldn't be able to do.
 
 **[More projects](https://github.com/phoenixthomasbird/phoenixbird-portfolio)**: a Claude tool-use research agent, a Hebrew speaking tutor, an Agent SDK experiment, and the Python I wrote while learning.
