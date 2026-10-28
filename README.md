@@ -20,7 +20,6 @@ A desktop app for writers. The design question: how do you bridge the gap betwee
 - I focus on a few select tasks for the day: edit a book, add features to the app, draft another book, etc.
 - To date I have used Bōcere to assemble and print 8 books. My first prototype was a web app version assembled in July of this year. I moved the concept into Electron by the end of September, though had my first printed book in hand by September 4th, 2026, produced through the web app prototype.
 - My day ends with walking my Cardigan Corgi puppy, Watson, around the neighborhood before enjoying a glass of wine with a home cooked meal.
-- 
 
 ## Also
 
